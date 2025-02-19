@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--
+    
+    Portfolio's Home Page
+    Author: Arya Mohan
+    Date:   Dec 9
+    Filename: index.html
+-->
+   <meta charset="UTF-8">
+   <meta name="keywords" content="" >
+   <title>Arya Mohan | E-Portfolio</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    
+   <link href="styles.css" rel="stylesheet">
+   <script src="main.js" defer></script>
+   <script src="canvas.js" defer></script>
+   
+</head>
+
+<body >
+
+    <header>    
+
+      <!-- Navigation Bar -->
+      <nav id="nav" class="navbar navbar-expand-lg navbar-light .bg-dark  text-light fw-bold"  >
+        <div class="container-fluid">
+          <a  class="navbar-brand fw-bold" href="#">Arya Mohan's Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#goals">Goals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#course-work">Work Samples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    </header>
+
+
+<!-- Home Section -->
+    <section id="home" class="home-section text-center   text-white d-flex flex-column justify-content-center align-items-center">
+        <canvas id="canvas1"></canvas>
+        <h1 class="display-3">I'm Arya Mohan</h1>
+        <p class="lead">Full-Stack Developer and IoT Enthusiast.</p>
+        <img src="arya.jpg" alt="Arya Mohan" class="profile-photo img-fluid rounded">
+    </section>
+  
+
+<!-- About Me Section -->
+    <section id="about" class="py-5 ">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">About Me</h2>
+        <!-- Card Component -->
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title">About Me</h5>
+            <p class="card-text">
+              Resourceful and detail-oriented professional with 2+ years of academic experience as a Demonstrator in Electronics. Adept at creating engaging learning environments, developing innovative curricula, and evaluating student outcomes. Proficient in both theory and hands-on laboratory instruction, fostering analytical thinking and problem-solving among students.
+            </p>
+            <p class="card-text">
+              Now pursuing a career transition into the dynamic field of electronics manufacturing and technology development, aiming to leverage my solid foundation in VLSI, embedded systems, IoT programming, and microcontroller development. Eager to apply my teaching, technical expertise, and collaborative mindset to optimize manufacturing processes, improve product design, and contribute to innovative solutions.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Card Component for Additional Content -->
+        <div class="card shadow-lg mt-4">
+          <div class="card-body">
+            <h5 class="card-title">Current Focus</h5>
+            <p class="card-text">
+              Currently enrolled in a Full-Stack Application Development course, I am expanding my programming skills to include web technologies and cloud-based solutions. With a deep passion for continuous learning, I am excited about bridging the gap between software and hardware to enhance manufacturing efficiency, product innovation, and IoT-integrated solutions.
+            </p>
+            <p class="card-text">
+              I thrive in multi-disciplinary environments, enjoy solving complex challenges, and am motivated to apply my expertise in both software and hardware domains to make a meaningful contribution within the electronics industry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+<!-- Goals Section -->
+
+
+    <section id="goals">
+  
+      <h2>My Goals</h2>
+      <div class="goals-container">
+        <!-- Carousel for Goals -->
+        <div id="carouselGoals" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselGoals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Goal 1"></button>
+            <button type="button" data-bs-target="#carouselGoals" data-bs-slide-to="1" aria-label="Goal 2"></button>
+            <button type="button" data-bs-target="#carouselGoals" data-bs-slide-to="2" aria-label="Goal 3"></button>
+            <button type="button" data-bs-target="#carouselGoals" data-bs-slide-to="3" aria-label="Goal 4"></button>
+            <button type="button" data-bs-target="#carouselGoals" data-bs-slide-to="4" aria-label="Goal 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img src="goals.jpg" class="d-block w-100" alt="Goal 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Complete Full-Stack Development Course by 2024</h5>
+                <p>Complete my Full-Stack Development course by the end of 2024.</p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img src="goals2.jpg" class="d-block w-100" alt="Goal 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Work in Electronics Manufacturing as an IoT Developer</h5>
+                <p>Get hands-on experience in the IoT field and work with advanced electronics manufacturing technologies.</p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <img src="goals3.jpg" class="d-block w-100" alt="Goal 3">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Build an IoT & Full-Stack Project</h5>
+                <p>Develop a project integrating IoT systems and full-stack web technologies.</p>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <img src="goals4.jpg" class="d-block w-100" alt="Goal 4">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Earn Cloud Platform Certifications</h5>
+                <p>Get certified in cloud platforms like AWS IoT to enhance my professional skills.</p>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="carousel-item">
+              <img src="goals.jpg" class="d-block w-100" alt="Goal 5">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Expand Professional Network</h5>
+                <p>Attend industry events and grow my professional network to open up new opportunities.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselGoals" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselGoals" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>      
+          
+    </section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">My Skills</h2>
+    <table class="table table-dark table-striped table-bordered">
+      <thead class="table-primary">
+        <tr>
+          <th>Technical Skills</th>
+          <th>Soft Skills</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>VLSI Design</td>
+          <td>Problem-solving and Analytical Thinking</td>
+        </tr>
+        <tr>
+          <td>Embedded Systems Development</td>
+          <td>Teamwork and Collaboration</td>
+        </tr>
+        <tr>
+          <td>Microcontroller Programming (e.g., 8051, PIC, ARM)</td>
+          <td>Adaptability and Willingness to Learn</td>
+        </tr>
+        <tr>
+          <td>Verilog/VHDL Programming</td>
+          <td>Effective Communication</td>
+        </tr>
+        <tr>
+          <td>IoT Development and Integration</td>
+          <td>Leadership and Mentoring</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+<!-- Resume Section -->
+
+  <section id="resume">
+    <h2>My Resume</h2>
+
+    <div class="resume-content">
+        <h3>Arya Mohan</h3>
+        <p>6 Sawmill Crescent, Lower Sackville, Nova Scotia | 902-333-5341 | aryamohan613@gmail.com</p>
+
+        <h4>Profile</h4>
+        <p>Experienced electronics demonstrator passionate about hands-on learning. Skilled in circuit design, IoT development, and software integration. Transitioning into full-stack development and electronics manufacturing.</p>
+
+        <h4>Experience</h4>
+        <button class="toggle-button" data-target="experience-details">See More..</button>
+        <div id="experience-details" class="toggle-content">
+            <p><strong>Demonstrator in Electronics</strong> – College of Applied Science, Ayilur, Kerala, India <br>
+            <em>June 2019 - December 2021</em></p>
+            <ul>
+                <li>Delivered lectures and facilitated lab sessions in electronics.</li>
+                <li>Designed course materials, assignments, and evaluations.</li>
+                <li>Provided individualized guidance, fostering a collaborative environment.</li>
+            </ul>
+        </div>
+
+        <h4>Education</h4>
+        <button class="toggle-button" data-target="education-details">See More..</button>
+        <div id="education-details" class="toggle-content">
+            <ul>
+                <li><a href="https://www.nscc.ca/">Nova Scotia Community College</a> (09/2023 - 05/2024) - IT Programming for IoT</li>
+                <li><a href="https://ktu.edu.in/">APJ Abdul Kalam Technological University</a> (08/2015 - 05/2017) - Master of Technology in Electronics and Communication (VLSI & Embedded Systems)</li>
+                <li><a href="https://www.keralauniversity.ac.in/home">University of Kerala</a> (08/2010 - 05/2014) - Bachelor of Technology in Electronics and Communication</li>
+            </ul>
+        </div>
+
+        <h4>Skills</h4>
+        <button class="toggle-button" data-target="skills-details">See More..</button>
+        <div id="skills-details" class="toggle-content">
+        <ul>
+            <li>VLSI Design, Embedded Systems Development, Microcontroller Programming</li>
+            <li>Verilog/VHDL Programming, IoT Technologies, PCB Design</li>
+            <li>Programming: C++, Python, JavaScript, MATLAB</li>
+            <li>Software: Arduino IDE, Cadence, MPLAB, MATLAB/Simulink</li>
+        </ul>
+    </div>
+  </section>
+
+<!-- Recent Course Work Samples Section -->
+<section id="course-work" class="py-5 ">
+  <div class="container">
+    <h2 class="text-center mb-4">Recent Course Work Samples</h2>
+
+    <!-- Row for Course Work Cards -->
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+      <!-- Full-Stack Application Development Card -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="full-stack-project-image.jpg" class="card-img-top" alt="Full-Stack Application Development">
+          <div class="card-body">
+            <h5 class="card-title">Full-Stack Application Development</h5>
+            <p class="card-text">A web application built using HTML, CSS, and JavaScript to demonstrate full-stack development skills. It includes user authentication, a database for data storage, and various dynamic features.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- IoT Device Integration Card -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="iot-project-image.jpg" class="card-img-top" alt="IoT Device Integration">
+          <div class="card-body">
+            <h5 class="card-title">IoT Device Integration</h5>
+            <p class="card-text">An IoT project demonstrating how to integrate sensors and devices with a web interface. It includes both hardware (Arduino) and software (Node.js, Express) components for seamless communication.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Smart Door Lock Project Card -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="smart-door-lock-image.jpg" class="card-img-top" alt="Smart Door Lock">
+          <div class="card-body">
+            <h5 class="card-title">Smart Door Lock</h5>
+            <p class="card-text">An innovative access control system integrating multiple authentication methods (RFID, keypad, web interface) using a Raspberry Pi. The system offers enhanced security with MQTT for remote monitoring and real-time access tracking.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Acme Restaurant Webpage Card -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="acme-restaurant-image.jpg" class="card-img-top" alt="Acme Restaurant Website">
+          <div class="card-body">
+            <h5 class="card-title">Acme Restaurant Website</h5>
+            <p class="card-text">A fully responsive website for Acme Restaurant, featuring three HTML pages and two stylesheets (styles.css and layout.css). The website includes a horizontal menu for tablets/desktops, a mobile-friendly menu with dynamic color changes, and a grid layout for desktop.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    
+  <!-- Contact Section -->
+<section id="contact" class="container mt-5">
+  <h2 class="text-center mb-4">Contact Me</h2>
+  <div class="card text-center">
+      <div class="card-body">
+          <h5 class="card-title">Arya Mohan</h5>
+          <p class="card-text">
+              <strong>Address:</strong> <br>
+              6 Sawmill Crescent <br>
+              Middle Sackville <br>
+              Halifax, B4E 3M5
+          </p>
+          <p class="card-text">
+              <strong>Phone:</strong> 902-333-5341
+          </p>
+          <p class="card-text">
+              <strong>Email:</strong> 
+              <a href="mailto:aryamohan613@gmail.com?subject=Entry%20Form">aryamohan613@gmail.com</a>
+          </p>
+          <p class="card-text">
+              <strong>LinkedIn:</strong> 
+              <a href="https://www.linkedin.com/in/arya-mohan-453675131/" target="_blank">LinkedIn Profile</a>
+          </p>
+      </div>
+  </div>
+</section>
+
+ <!-- Footer -->
+    <footer>
+        <p>© 2024 Arya Mohan | All Rights Reserved</p>
+    </footer>
+    
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" class="btn">
+       Top
+    </button>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>
+   

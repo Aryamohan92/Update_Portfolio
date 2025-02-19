@@ -1,0 +1,136 @@
+
+/* Nav bar styles*/
+#nav {
+    background-color: white !important;
+    color: black !important;
+    height: 100%;
+}
+.navbar-nav {
+    display: flex; 
+    justify-content:space-evenly;
+    width: 100%;
+    background-color: white;
+}
+.navbar-nav .nav-item {
+    margin-right: 20px; 
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0; 
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* carousel styles*/
+
+#carouselGoals .carousel-inner .carousel-item img {
+    max-height: 600px; 
+    object-fit: cover; 
+    width: 100%; 
+}
+
+#carouselGoals {
+    max-width: 80%; 
+    margin: 0 auto; 
+}
+
+#goals h2{
+    text-align: center;
+    margin: 30px
+}
+
+
+/* Home Section Styling */
+
+.home-section {
+    height: 100vh; 
+    
+}
+  
+.profile-photo {
+    max-width: 40%; 
+    height: auto; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:black;
+    color:white;
+   
+    bottom: 0;
+    width: 100%;
+    
+}
+
+#goals,#about,#skills,#resume,#contact,#course-work{
+    padding: 20px 20px 20px 20px;
+   
+    margin-top: 60px;
+    background-color:whitesmoke;
+
+    text-align: justify;
+  }
+
+ /* Scroll-to-Top Button Styles */
+#scrollToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background-color: black; 
+      color: white; 
+      border: none; 
+      padding: 10px 15px; 
+      border-radius: 5px; 
+      font-size: 18px; 
+      cursor: pointer; 
+      transition: background-color 0.3s; 
+  }
+  
+
+  #scrollToTopBtn:hover {
+      background-color: #333; 
+  }
+
+  .toggle-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.toggle-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.toggle-button:hover {
+    background-color: #555;
+}
+
+
+/*canvas*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#canvas1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    z-index: -1;
+}
