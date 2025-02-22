@@ -18,6 +18,11 @@
    <link href="styles.css" rel="stylesheet">
    <script src="main.js" defer></script>
    <script src="canvas.js" defer></script>
+   <!-- React CDN -->
+   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
    
 </head>
 
@@ -71,41 +76,38 @@
         <canvas id="canvas1"></canvas>
         <h1 class="display-3">I'm Arya Mohan</h1>
         <p class="lead">Full-Stack Developer and IoT Enthusiast.</p>
-        <img src="arya.jpg" alt="Arya Mohan" class="profile-photo img-fluid rounded">
+       
     </section>
   
 
 <!-- About Me Section -->
-    <section id="about" class="py-5 ">
-      <div class="container">
-        <h2 class="text-center fw-bold mb-4">About Me</h2>
-        <!-- Card Component -->
-        <div class="card shadow-lg">
-          <div class="card-body">
-            <h5 class="card-title">About Me</h5>
-            <p class="card-text">
-              Resourceful and detail-oriented professional with 2+ years of academic experience as a Demonstrator in Electronics. Adept at creating engaging learning environments, developing innovative curricula, and evaluating student outcomes. Proficient in both theory and hands-on laboratory instruction, fostering analytical thinking and problem-solving among students.
-            </p>
-            <p class="card-text">
-              Now pursuing a career transition into the dynamic field of electronics manufacturing and technology development, aiming to leverage my solid foundation in VLSI, embedded systems, IoT programming, and microcontroller development. Eager to apply my teaching, technical expertise, and collaborative mindset to optimize manufacturing processes, improve product design, and contribute to innovative solutions.
-            </p>
-          </div>
-        </div>
-        
-        <!-- Card Component for Additional Content -->
-        <div class="card shadow-lg mt-4">
-          <div class="card-body">
-            <h5 class="card-title">Current Focus</h5>
-            <p class="card-text">
-              Currently enrolled in a Full-Stack Application Development course, I am expanding my programming skills to include web technologies and cloud-based solutions. With a deep passion for continuous learning, I am excited about bridging the gap between software and hardware to enhance manufacturing efficiency, product innovation, and IoT-integrated solutions.
-            </p>
-            <p class="card-text">
-              I thrive in multi-disciplinary environments, enjoy solving complex challenges, and am motivated to apply my expertise in both software and hardware domains to make a meaningful contribution within the electronics industry.
-            </p>
-          </div>
-        </div>
+    
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">About Me</h2>
+    <div class="row align-items-center">
+      <!-- Profile Image -->
+      <div class="col-md-4 mb-4">
+        <img src="arya.jpg" alt="Your Profile" class="img-fluid rounded-circle shadow-lg">
       </div>
-    </section>
+      
+      <!-- Text Content -->
+      <div class="col-md-8">
+        <h4 class="fw-bold">Professional Overview</h4>
+        <p>
+          Resourceful and detail-oriented professional with 2+ years of academic experience as a Demonstrator in Electronics. Adept at creating engaging learning environments, developing innovative curricula, and evaluating student outcomes. Proficient in both theory and hands-on laboratory instruction, fostering analytical thinking and problem-solving among students.
+        </p>
+        <h4 class="fw-bold">Current Focus</h4>
+        <p>
+          Currently enrolled in a Full-Stack Application Development course, I am expanding my programming skills to include web technologies and cloud-based solutions. With a deep passion for continuous learning, I am excited about bridging the gap between software and hardware to enhance manufacturing efficiency, product innovation, and IoT-integrated solutions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
     
 <!-- Goals Section -->
@@ -395,33 +397,41 @@
   </div>
 </section>
 
-    
-  <!-- Contact Section -->
-<section id="contact" class="containejpgr mt-5">
+
+  
+<!-- Contact Section -->
+<section id="contact" class="container mt-5">
   <h2 class="text-center mb-4">Contact Me</h2>
-  <div class="card text-center">
-      <div class="card-body">
-          <h5 class="card-title">Arya Mohan</h5>
-          <p class="card-text">
-              <strong>Address:</strong> <br>
-              6 Sawmill Crescent <br>
-              Middle Sackville <br>
-              Halifax, B4E 3M5
-          </p>
-          <p class="card-text">
-              <strong>Phone:</strong> 902-333-5341
-          </p>
-          <p class="card-text">
-              <strong>Email:</strong> 
-              <a href="mailto:aryamohan613@gmail.com?subject=Entry%20Form">aryamohan613@gmail.com</a>
-          </p>
-          <p class="card-text">
-              <strong>LinkedIn:</strong> 
-              <a href="https://www.linkedin.com/in/arya-mohan-453675131/" target="_blank">LinkedIn Profile</a>
-          </p>
-      </div>
+  <div class="text-center">
+    <h5 class="mb-2">Arya Mohan</h5>
+    <p>
+      <strong>Address:</strong> <br>
+      6 Sawmill Crescent <br>
+      Middle Sackville <br>
+      Halifax, B4E 3M5
+    </p>
+    <p>
+      <strong>Phone:</strong> 902-333-5341
+    </p>
+    <p>
+      <strong>Email:</strong> 
+      <a href="mailto:aryamohan613@gmail.com?subject=Entry%20Form">aryamohan613@gmail.com</a>
+    </p>
+
+    <p>
+      <strong>LinkedIn:</strong> 
+      <a href="https://www.linkedin.com/in/arya-mohan-453675131/" target="_blank">LinkedIn Profile</a>
+    </p>
   </div>
+
+  <!-- React Contact Form Will Be Rendered Here -->
+  <div id="contact-form" class="mt-4"></div>
 </section>
+
+
+
+
+
 
  <!-- Footer -->
     <footer>
@@ -436,7 +446,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
+<script type="text/babel" src="contact.js"></script>
 </body>
 </html>
    
